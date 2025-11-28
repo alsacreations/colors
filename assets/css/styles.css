@@ -15,6 +15,14 @@
 [data-layout*="autogrid"] {
   --col-min-size: 14rem;
 }
+/* Focus clavier */
+:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+  outline-color: var(--accent);
+  transition: var(--transition-duration);
+  transition-property: outline-color, outline-offset;
+}
 
 /* Base */
 body {
@@ -181,7 +189,8 @@ body {
   transition: translate var(--transition-duration);
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     border-width: 2px;
     translate: 0 -2px;
     border-color: var(--primary);

@@ -49,7 +49,14 @@ function init() {
     );
     if (color) {
       selectColor(color);
-      searchInput.value = color.name;
+    }
+  } else {
+    // Display "hotpink" by default if no search parameter
+    const hotpink = colorsWithHsl.find(
+      (c) => c.name.toLowerCase() === "hotpink"
+    );
+    if (hotpink) {
+      selectColor(hotpink);
     }
   }
 }
@@ -133,6 +140,8 @@ function removeActive(items) {
 function handleHueSlider(e) {
   // Reset other filters
   specialFilterSelect.value = "";
+  searchInput.value = "";
+  suggestionsList.hidden = true;
 
   const hue = parseInt(e.target.value, 10);
 
@@ -427,13 +436,34 @@ function getColorDistance(c1, c2) {
 function createColorCard(color) {
   const div = document.createElement("div");
   div.className = "color-card";
+  div.setAttribute("tabindex", "0");
+  div.setAttribute("role", "button");
+  div.setAttribute("aria-label", `Sélectionner la couleur ${color.name}`);
   div.innerHTML = `
         <div class="card-preview" style="background-color: ${color.hex}"></div>
         <div class="card-info">
             <span class="text-s font-bold">${color.name}</span>
         </div>
     `;
-  div.addEventListener("click", () => selectColor(color));
+
+  // Fonction pour sélectionner la couleur et réinitialiser la recherche
+  const handleSelect = () => {
+    searchInput.value = "";
+    suggestionsList.hidden = true;
+    selectColor(color);
+  };
+
+  // Gestion du clic
+  div.addEventListener("click", handleSelect);
+
+  // Gestion du clavier (Enter et Space)
+  div.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handleSelect();
+    }
+  });
+
   return div;
 }
 
