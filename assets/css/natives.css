@@ -494,10 +494,10 @@ input:not(
   }
 
   /* État valide après interaction utilisateur */
-  &:user-valid {
+  /* &:user-valid {
     --input-border-color: var(--success);
     --input-border-width: 2px;
-  }
+  } */
 
   /* Placeholder */
   &::placeholder {
