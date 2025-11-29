@@ -204,7 +204,7 @@ function renderSpecialResults(colors, filterType) {
 
   const descriptions = {
     historical:
-      "Les 16 couleurs originales du HTML, héritées du système VGA. Ces couleurs ont été définies dès les débuts du web et sont supportées par tous les navigateurs depuis toujours.",
+      "Les 16 couleurs originelles du HTML, héritées du système VGA. Ces couleurs ont été définies dès les débuts du web et sont supportées par tous les navigateurs depuis toujours.",
     pastel:
       "Couleurs douces et claires, parfaites pour créer des interfaces délicates et apaisantes. Idéales pour les designs minimalistes et élégants.",
     vintage:
@@ -212,11 +212,11 @@ function renderSpecialResults(colors, filterType) {
     grays:
       "Toutes les nuances de gris disponibles en CSS, du noir au blanc. Essentielles pour créer des designs monochromes sophistiqués et des hiérarchies visuelles.",
     edible:
-      "Couleurs inspirées par la nourriture et les boissons. De quoi donner faim en codant !",
+      "Couleurs inspirées par la nourriture et les boissons. De quoi donner faim en codant&#8239;!",
     plants:
       "Couleurs évoquant la nature, les fleurs et les plantes. Apportez une touche végétale à vos interfaces.",
     minerals:
-      "Couleurs inspirées par les pierres précieuses et les minéraux. Pour des designs qui brillent !",
+      "Couleurs inspirées par les pierres précieuses et les minéraux. Pour des designs qui brillent&#8239;!",
     system:
       "Couleurs système qui s'adaptent automatiquement au thème de l'utilisateur (clair/sombre). Utilisez-les pour respecter les préférences d'accessibilité.",
   };
@@ -370,7 +370,7 @@ function renderSelectedColor(color) {
         <div class="color-preview-large" style="background-color: ${
           color.hex
         }; color: ${textColor}">
-            <h2 class="title-l">${color.name}</h2>
+            <h2 class="title-l color-preview-title">${color.name}</h2>
         </div>
         <div class="color-info">
             ${colorValues}
