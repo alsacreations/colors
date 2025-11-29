@@ -422,7 +422,7 @@ select {
   --button-border-color: transparent;
   --button-background-color: var(--color-gray-200);
   --button-text-color: var(--surface);
-  border-radius: 50% 40% 30% 50% / 60% 50% 60% 40%;
+  border-radius: 0% 20% 20% 20% / 20% 40% 40% 40%;
   position: absolute;
   right: 0;
   bottom: calc(-1 * var(--spacing-s));
