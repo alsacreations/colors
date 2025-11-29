@@ -2,7 +2,7 @@
 export class ColorQuiz {
   constructor(colors) {
     this.colors = colors.filter((c) => !c.system); // Exclude system colors
-    this.totalQuestions = 5;
+    this.totalQuestions = 10;
     this.currentQuestion = 0;
     this.score = 0;
     this.questions = [];
@@ -79,9 +79,9 @@ export class ColorQuiz {
 
       usedColors.add(correctColor.name);
 
-      // Generate 3 wrong answers
+      // Generate 5 wrong answers (6 choices total)
       const wrongColors = [];
-      while (wrongColors.length < 3) {
+      while (wrongColors.length < 5) {
         const randomColor =
           this.colors[Math.floor(Math.random() * this.colors.length)];
         if (
@@ -159,7 +159,7 @@ export class ColorQuiz {
     }`;
     this.feedbackEl.textContent = isCorrect
       ? "✅ Bravo ! C'est la bonne couleur !"
-      : `❌ Oups ! C'était ${question.correctColor.name}`;
+      : `❌ Oups ! C'était ${selectedColorName}`;
 
     // Show next button or end game
     if (this.currentQuestion < this.totalQuestions - 1) {
