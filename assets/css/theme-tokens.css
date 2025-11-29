@@ -11,6 +11,8 @@
 :root {
   /* Theme (color-scheme) */
   color-scheme: light dark;
+  /* On force en dark */
+  color-scheme: dark;
 
   &[data-theme="light"] {
     color-scheme: light;
