@@ -426,3 +426,9 @@ select {
   right: 0;
   bottom: calc(-1 * var(--spacing-s));
 }
+
+.btn-cta {
+  --button-border-color: transparent;
+  --button-background-color: #5c6bc0;
+  --button-text-color: var(--on-surface);
+}
