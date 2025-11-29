@@ -14,7 +14,7 @@
 
 /* Modificateurs */
 :root {
-  --form-control-border-width: 2px;
+  --form-control-border-width: 1px;
   --form-control-border-color: var(--accent);
   --form-control-border-radius: var(--radius-24);
 }
@@ -26,6 +26,7 @@
 }
 [data-layout*="autogrid"] {
   --col-min-size: 14rem;
+  --grid-fill: auto-fill;
 }
 /* Focus clavier */
 :focus-visible {
@@ -168,7 +169,7 @@ body {
 /* Selected Color Card */
 .selected-color-card {
   background-color: var(--surface);
-  border: 2px solid var(--border-light);
+  border: var(--form-control-border-width) solid var(--border-light);
   border-radius: var(--radius-24);
   overflow: hidden;
   display: grid;
@@ -217,7 +218,7 @@ body {
 .color-card {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--border-light);
+  border: var(--form-control-border-width) solid var(--border-light);
   border-radius: var(--radius-24);
   overflow: hidden;
   transition: translate var(--transition-duration);
@@ -225,7 +226,6 @@ body {
 
   &:hover,
   &:focus-visible {
-    border-width: 2px;
     translate: 0 -2px;
     border-color: var(--primary);
   }
@@ -285,7 +285,7 @@ body {
   width: 100%;
   height: 1.4rem;
   border-radius: var(--radius-full);
-  box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 4px var(--surface);
+  box-shadow: inset 0 0 0 1px var(--accent), inset 0 0 0 4px var(--surface);
   background: linear-gradient(
     to right,
     #ff0000 0%,
