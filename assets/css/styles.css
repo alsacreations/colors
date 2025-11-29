@@ -192,7 +192,6 @@ body {
 
 .color-preview-title {
   font-size: max(4cqi, 2.4rem);
-  text-shadow: var(--on-surface) 1px 1px;
 }
 
 .color-info {
