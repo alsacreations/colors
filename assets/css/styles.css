@@ -419,7 +419,8 @@ select {
 }
 
 [id="quiz-btn"] {
+  --button-border-color: var(--border-light);
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: calc(-1 * var(--spacing-s));
 }
