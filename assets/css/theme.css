@@ -16,7 +16,6 @@
 /* stylelint-enable */
 
 :root {
-
   /* Breakpoints (en dur) */
   --md: 48rem; /* 768px */
   --lg: 64rem; /* 1024px */
@@ -50,8 +49,9 @@
   --spacing-80: 5rem;
 
   /* Familles de police */
-  --font-base:  system-ui, sans-serif;
-  --font-mono:  ui-monospace, monospace;
+  --font-base: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --font-chicle: chicle, serif;
 
   /* Graisses de police */
   --font-weight-light: 300;
@@ -130,7 +130,7 @@
   --color-info-700: oklch(0.3633 0.18 256.37);
   --color-info-900: oklch(0.2133 0.11 256.37);
 
-/* Couleurs personnalisées */
+  /* Couleurs personnalisées */
   --color-raspberry-50: oklch(100% 0.01 352);
   --color-raspberry-100: oklch(98% 0.03 352);
   --color-raspberry-200: oklch(94.5% 0.12 352);

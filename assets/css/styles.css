@@ -3,6 +3,15 @@
  * ----------------------------------
  */
 
+/* chicle-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: chicle;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/chicle-v27-latin-regular.woff2") format("woff2");
+}
+
 /* Modificateurs */
 :root {
   --form-control-border-width: 2px;
@@ -44,12 +53,13 @@ body {
 
 /* Titres */
 .title-l {
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   font-weight: var(--font-weight-bold);
 }
 
 .title-main {
   color: var(--primary);
+  font-family: var(--font-chicle);
 }
 
 .title-m {
