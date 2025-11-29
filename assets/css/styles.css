@@ -25,7 +25,7 @@
   --boxed-max: 80rem;
 }
 [data-layout*="autogrid"] {
-  --col-min-size: 14rem;
+  --col-min-size: 10rem;
   --grid-fill: auto-fill;
 }
 /* Focus clavier */
