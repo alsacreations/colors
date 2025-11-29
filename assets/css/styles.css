@@ -52,6 +52,7 @@ body {
 }
 
 .header {
+  position: relative;
   min-height: 100px;
   align-content: center;
   background-image: url("../img/llline.svg");
@@ -245,30 +246,6 @@ body {
   display: none !important;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: var(--spacing-s) var(--spacing-m);
-  border-radius: var(--radius-8);
-  font-weight: var(--font-weight-semibold);
-  cursor: pointer;
-  transition: all var(--transition-duration);
-  border: 1px solid transparent;
-  font-size: var(--text-s);
-}
-
-.btn-outline {
-  --button-border-color: var(--accent);
-  background-color: transparent;
-  color: var(--accent);
-}
-
-.btn-outline:hover {
-  --button-border-color: var(--primary);
-  background-color: var(--primary);
-  color: var(--on-primary);
-}
-
 /* Hue Slider */
 .hue-slider-wrapper {
   width: 100%;
@@ -439,4 +416,10 @@ select {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
+}
+
+[id="quiz-btn"] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

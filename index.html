@@ -17,11 +17,15 @@
       crossorigin
     />
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/quiz.css" />
     <script type="module" src="assets/js/app.js" defer></script>
   </head>
   <body data-layout="boxed">
     <header class="header" data-layout="stack">
       <h1 class="title-main title-l">Hotpink</h1>
+      <button id="quiz-btn" class="btn btn-primary" type="button">
+        Jouer 🎮
+      </button>
     </header>
 
     <main class="main" data-layout="stack" data-gap="l">
@@ -166,5 +170,79 @@
         </a>
       </div>
     </footer>
+
+    <!-- Quiz Dialog -->
+    <dialog id="quiz-dialog" class="dialog-lg">
+      <div class="dialog-content">
+        <div class="dialog-header">
+          <h2 class="dialog-title">Quiz des Couleurs 🎨</h2>
+          <button
+            id="quiz-close"
+            class="dialog-close"
+            type="button"
+            aria-label="Fermer le quiz"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="dialog-body">
+          <!-- Start Screen -->
+          <div id="quiz-start" class="quiz-screen">
+            <p class="text-m">
+              Testez vos connaissances des noms de couleurs
+              <span lang="en">CSS</span> !
+            </p>
+            <p class="text-subtle">
+              5 questions • Trouvez la bonne couleur parmi 4 choix
+            </p>
+            <button id="quiz-start-btn" class="btn btn-primary" type="button">
+              Commencer
+            </button>
+          </div>
+
+          <!-- Game Screen -->
+          <div id="quiz-game" class="quiz-screen" hidden>
+            <div class="quiz-header">
+              <span class="quiz-score"
+                >Score : <strong id="quiz-current-score">0</strong>/5</span
+              >
+              <span class="quiz-question-number"
+                >Question <strong id="quiz-question-num">1</strong>/5</span
+              >
+            </div>
+
+            <h3 class="title-m quiz-question" id="quiz-color-name">
+              papayawhip
+            </h3>
+
+            <div class="quiz-choices" id="quiz-choices"></div>
+
+            <div id="quiz-feedback" class="quiz-feedback" hidden></div>
+
+            <button
+              id="quiz-next-btn"
+              class="btn btn-primary"
+              type="button"
+              hidden
+            >
+              Question suivante
+            </button>
+          </div>
+
+          <!-- Results Screen -->
+          <div id="quiz-results" class="quiz-screen" hidden>
+            <h3 class="title-m">Résultat 🎉</h3>
+            <p class="quiz-final-score">
+              Vous avez obtenu <strong id="quiz-final-score">0</strong>/5
+            </p>
+            <p id="quiz-message" class="text-m"></p>
+            <button id="quiz-replay-btn" class="btn btn-primary" type="button">
+              Rejouer
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>

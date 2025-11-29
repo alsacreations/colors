@@ -1,0 +1,125 @@
+/* Quiz Specific Styles */
+.quiz-screen {
+  text-align: center;
+}
+
+.quiz-screen p {
+  margin-bottom: var(--spacing-s);
+}
+
+.quiz-screen .btn {
+  margin-top: var(--spacing-m);
+}
+
+/* Quiz Game */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-s);
+  background-color: var(--layer-2);
+  border-radius: var(--radius-16);
+}
+
+.quiz-question {
+  margin-block: var(--spacing-m);
+  color: var(--on-surface);
+  text-transform: lowercase;
+}
+
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 80px;
+  justify-items: center;
+  gap: var(--spacing-m);
+  margin-bottom: var(--spacing-l);
+}
+
+.quiz-choice {
+  aspect-ratio: 1;
+  border-radius: var(--radius-16);
+  border: 3px solid var(--border-light);
+  cursor: pointer;
+  transition: all var(--transition-duration);
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-choice:hover {
+  transform: scale(1.05);
+  border-color: var(--primary);
+}
+
+.quiz-choice:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.quiz-choice.correct {
+  border-color: #10b981;
+  border-width: 4px;
+  animation: pulse 0.5s ease-in-out;
+}
+
+.quiz-choice.incorrect {
+  border-color: #ef4444;
+  border-width: 4px;
+  animation: shake 0.5s ease-in-out;
+}
+
+.quiz-choice.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.quiz-feedback {
+  padding: var(--spacing-m);
+  border-radius: var(--radius-16);
+  margin-bottom: var(--spacing-m);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.quiz-feedback.correct {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.quiz-feedback.incorrect {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Quiz Results */
+.quiz-final-score {
+  font-size: 2rem;
+  margin: var(--spacing-l) 0;
+}
+
+.quiz-final-score strong {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}

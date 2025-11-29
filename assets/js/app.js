@@ -6,6 +6,7 @@ import {
   hexToOklch,
 } from "./modules/utils.js";
 import { filterFunctions } from "./modules/filters.js";
+import { ColorQuiz } from "./modules/quiz.js";
 
 // DOM Elements
 const searchInput = document.getElementById("color-search");
@@ -60,6 +61,12 @@ function init() {
       selectColor(hotpink);
     }
   }
+
+  // Initialize quiz
+  const quiz = new ColorQuiz(colorsWithHsl);
+  document
+    .getElementById("quiz-btn")
+    .addEventListener("click", () => quiz.open());
 }
 
 function setupEventListeners() {
@@ -414,7 +421,7 @@ function renderSelectedColor(color) {
             ${colorValues}
             ${a11ySection}
 
-            <button id="toggle-fav-btn" class="btn btn-outline">
+            <button id="toggle-fav-btn" class="btn btn-primary">
                 ${isFav ? "Retirer des favoris" : "Ajouter aux favoris"}
             </button>
         </div>
