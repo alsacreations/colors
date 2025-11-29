@@ -13,16 +13,16 @@
   color-scheme: light dark;
 
   &[data-theme="light"] {
-  color-scheme: light;
+    color-scheme: light;
   }
 
   &[data-theme="dark"] {
-  color-scheme: dark;
+    color-scheme: dark;
   }
 
   /* Couleur primaire */
-  --primary: var(--color-raspberry-500);
-  --on-primary: var(--color-white);
+  --primary: var(--color-raspberry-400);
+  --on-primary: var(--color-black);
   --primary-lighten: oklch(from var(--primary) calc(l * 1.2) c h);
   --primary-darken: oklch(from var(--primary) calc(l * 0.8) c h);
 
@@ -67,22 +67,61 @@
   --text-4xl: clamp(var(--text-48), 2.1818rem + 3.6364vw, var(--text-80));
 
   /* Hauteurs de lignes */
-  --line-height-s: clamp(var(--line-height-20), 1.1522rem + 0.4348vw, var(--line-height-24));
-  --line-height-m: clamp(var(--line-height-24), 1.4022rem + 0.4348vw, var(--line-height-28));
-  --line-height-2xl: clamp(var(--line-height-32), 1.9022rem + 0.4348vw, var(--line-height-36));
-  --line-height-5xl: clamp(var(--line-height-40), 1.8152rem + 3.0435vw, var(--line-height-68));
-  --line-height-4xl: clamp(var(--line-height-40), 2.1087rem + 1.7391vw, var(--line-height-56));
-  --line-height-6xl: clamp(var(--line-height-80), 4.5109rem + 2.1739vw, var(--line-height-100));
+  --line-height-s: clamp(
+    var(--line-height-20),
+    1.1522rem + 0.4348vw,
+    var(--line-height-24)
+  );
+  --line-height-m: clamp(
+    var(--line-height-24),
+    1.4022rem + 0.4348vw,
+    var(--line-height-28)
+  );
+  --line-height-2xl: clamp(
+    var(--line-height-32),
+    1.9022rem + 0.4348vw,
+    var(--line-height-36)
+  );
+  --line-height-5xl: clamp(
+    var(--line-height-40),
+    1.8152rem + 3.0435vw,
+    var(--line-height-68)
+  );
+  --line-height-4xl: clamp(
+    var(--line-height-40),
+    2.1087rem + 1.7391vw,
+    var(--line-height-56)
+  );
+  --line-height-6xl: clamp(
+    var(--line-height-80),
+    4.5109rem + 2.1739vw,
+    var(--line-height-100)
+  );
 
   /* Espacements */
   --spacing-xs: var(--spacing-4);
   --spacing-s: clamp(var(--spacing-8), 0.2955rem + 0.9091vw, var(--spacing-16));
-  --spacing-m: clamp(var(--spacing-16), 0.5909rem + 1.8182vw, var(--spacing-32));
-  --spacing-l: clamp(var(--spacing-24), 0.8864rem + 2.2727vw, var(--spacing-48));
-  --spacing-xl: clamp(var(--spacing-32), 0.7727rem + 5.4545vw, var(--spacing-80));
+  --spacing-m: clamp(
+    var(--spacing-16),
+    0.5909rem + 1.8182vw,
+    var(--spacing-32)
+  );
+  --spacing-l: clamp(
+    var(--spacing-24),
+    0.8864rem + 2.2727vw,
+    var(--spacing-48)
+  );
+  --spacing-xl: clamp(
+    var(--spacing-32),
+    0.7727rem + 5.4545vw,
+    var(--spacing-80)
+  );
 
   /* Tokens complémentaires */
-  --form-control-background: light-dark(var(--color-gray-200), var(--color-gray-700));
+  --form-control-background: light-dark(
+    var(--color-gray-200),
+    var(--color-gray-700)
+  );
   --on-form-control: light-dark(var(--color-gray-900), var(--color-gray-100));
   --form-control-spacing: var(--spacing-12) var(--spacing-16);
   --form-control-border-width: 1px;
@@ -91,4 +130,3 @@
   --checkables-border-color: var(--color-gray-400);
   --checkable-size: 1.25em;
 }
-
