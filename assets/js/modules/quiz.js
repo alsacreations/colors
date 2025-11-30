@@ -158,8 +158,8 @@ export class ColorQuiz {
       isCorrect ? "correct" : "incorrect"
     }`;
     this.feedbackEl.textContent = isCorrect
-      ? "✅ Bravo ! C'est la bonne couleur !"
-      : `❌ Oups ! C'était ${selectedColorName}`;
+      ? "✅ Bravo\u202f! C'est la bonne couleur\u202f!"
+      : `❌ Oups\u202f! C'est ${selectedColorName}`;
 
     // Show next button or end game
     if (this.currentQuestion < this.totalQuestions - 1) {
