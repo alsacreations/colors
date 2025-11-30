@@ -1,5 +1,9 @@
 export const palettes = [
   {
+    name: "Hotpink",
+    colors: ["lightgray", "lavenderblush", "pink", "hotpink", "deeppink"],
+  },
+  {
     name: "Kiwi",
     colors: [
       "tan",
@@ -21,7 +25,7 @@ export const palettes = [
   },
   {
     name: "Pastel Party",
-    colors: ["lightpink", "lemonchiffon", "palegreen", "lavender", "lightblue"],
+    colors: ["pink", "lemonchiffon", "palegreen", "lavender", "lightblue"],
   },
   {
     name: "Sun & Sea",
@@ -39,14 +43,10 @@ export const palettes = [
   },
   {
     name: "Ocean Breeze",
-    colors: ["teal", "aquamarine", "lightcyan", "deepskyblue", "navy"],
+    colors: ["darkslategray", "teal", "cadetblue", "darkseagreen", "honeydew"],
   },
   {
-    name: "Monochrome Dark",
-    colors: ["black", "darkslategray", "dimgray", "gray", "silver"],
-  },
-  {
-    name: "Citrus Burst",
-    colors: ["lime", "yellowgreen", "orange", "gold", "white"],
+    name: "Lighthouse",
+    colors: ["maroon", "firebrick", "papayawhip", "darkslateblue", "steelblue"],
   },
 ];
