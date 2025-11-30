@@ -2,57 +2,85 @@ export const palettes = [
   {
     name: "Hotpink",
     colors: [
-      "lightgray",
-      "lavenderblush",
-      "pink",
-      "hotpink",
       "mediumvioletred",
+      "hotpink",
+      "pink",
+      "lavenderblush",
+      "lightgray",
     ],
   },
   {
     name: "Kiwi",
     colors: [
-      "tan",
-      "darkseagreen",
-      "yellowgreen",
-      "palegoldenrod",
       "saddlebrown",
+      "tan",
+      "yellowgreen",
+      "darkseagreen",
+      "palegoldenrod",
     ],
   },
   {
     name: "Coffee & Matcha",
     colors: [
       "darkseagreen",
-      "palegoldenrod",
-      "cornsilk",
       "blanchedalmond",
+      "cornsilk",
+      "palegoldenrod",
       "tan",
     ],
   },
   {
     name: "Pastel Party",
-    colors: ["pink", "lemonchiffon", "palegreen", "lavender", "lightblue"],
+    colors: ["pink", "lavender", "lemonchiffon", "palegreen", "lightblue"],
   },
   {
     name: "Sun & Sea",
     colors: [
-      "skyblue",
-      "lightseagreen",
       "darkslateblue",
-      "orange",
+      "lightseagreen",
       "darkorange",
+      "orange",
+      "skyblue",
     ],
   },
   {
     name: "Vintage Photo",
-    colors: ["tan", "navajowhite", "peru", "saddlebrown", "maroon"],
+    colors: ["maroon", "saddlebrown", "peru", "tan", "navajowhite"],
   },
   {
-    name: "Ocean Breeze",
-    colors: ["darkslategray", "teal", "cadetblue", "darkseagreen", "honeydew"],
+    name: "Green Globe",
+    colors: [
+      "darkgreen",
+      "forestgreen",
+      "darkseagreen",
+      "palegreen",
+      "honeydew",
+    ],
   },
   {
     name: "Lighthouse",
-    colors: ["maroon", "firebrick", "papayawhip", "darkslateblue", "steelblue"],
+    colors: ["maroon", "firebrick", "papayawhip", "steelblue", "darkslateblue"],
+  },
+  {
+    name: "Monochrome",
+    colors: ["black", "gray", "darkgray", "silver", "lightgray"],
+  },
+  {
+    name: "Poseidon",
+    colors: [
+      "darkslategray",
+      "steelblue",
+      "cadetblue",
+      "powderblue",
+      "honeydew",
+    ],
+  },
+  {
+    name: "Tropical Garden",
+    colors: ["seagreen", "lightseagreen", "darkseagreen", "gold", "burlywood"],
+  },
+  {
+    name: "Dusty Rose",
+    colors: ["black", "olive", "rosybrown", "burlywood", "khaki"],
   },
 ];

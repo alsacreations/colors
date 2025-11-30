@@ -28,6 +28,10 @@
   --col-min-size: 10rem;
   --grid-fill: auto-fill;
 }
+details {
+  --details-border-color: var(--border-light);
+}
+
 /* Focus clavier */
 :focus-visible {
   outline: 2px solid;
