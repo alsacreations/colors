@@ -132,7 +132,7 @@
   --color-info-900: oklch(0.2133 0.11 256.37);
 
   /* Couleurs personnalisées */
-  --color-raspberry-50: oklch(100% 0.01 352);
+  /* --color-raspberry-50: oklch(100% 0.01 352);
   --color-raspberry-100: oklch(98% 0.03 352);
   --color-raspberry-200: oklch(94.5% 0.12 352);
   --color-raspberry-300: oklch(84.5% 0.2 352);
@@ -143,5 +143,11 @@
   --color-raspberry-800: oklch(34.5% 0.14 352);
   --color-raspberry-900: oklch(24.5% 0.08 352);
   --color-raspberry-fade: oklch(72.83% 0.12 352);
-  --color-raspberry-bright: oklch(72.83% 0.28 352);
+  --color-raspberry-bright: oklch(72.83% 0.28 352); */
+
+  --color-mediumvioletred: mediumvioletred;
+  --color-hotpink: hotpink;
+  --color-pink: pink;
+  --color-lavenderblush: lavenderblush;
+  --color-lightgray: lightgray;
 }

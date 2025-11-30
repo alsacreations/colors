@@ -13,11 +13,6 @@
 }
 
 /* Modificateurs */
-:root {
-  --form-control-border-width: 1px;
-  --form-control-border-color: var(--accent);
-  --form-control-border-radius: var(--radius-24);
-}
 [data-layout*="liquid"] {
   --liquid-content: 64rem;
 }
@@ -28,8 +23,24 @@
   --col-min-size: 10rem;
   --grid-fill: auto-fill;
 }
+input {
+  --input-border-color-hover: var(--primary-darken);
+}
+button {
+  --button-border-color-hover: var(--primary-darken);
+}
 details {
   --details-border-color: var(--border-light);
+
+  & summary::after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+  }
+}
+select {
+  --select-border-color: var(--primary);
+  --select-border-color-hover: var(--primary-darken);
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
 }
 
 /* Focus clavier */
@@ -105,7 +116,7 @@ body {
 
   &:hover,
   &:focus-visible {
-    color: var(--accent);
+    color: var(--primary-darken);
   }
 }
 
@@ -132,7 +143,6 @@ body {
 .search-wrapper {
   position: relative;
   width: 100%;
-  max-width: 30rem;
 }
 
 .search-input {
@@ -140,7 +150,6 @@ body {
 
   font-size: var(--text-l);
   border-radius: var(--radius-full);
-  background-color: var(--surface);
   color: var(--on-surface);
   transition: border-color var(--transition-duration);
 }
@@ -173,7 +182,7 @@ body {
 
 .suggestion-item:hover,
 .suggestion-active {
-  background-color: var(--layer-3);
+  background-color: var(--color-lightgray);
 }
 
 .suggestion-color-preview {
@@ -189,7 +198,7 @@ body {
 
 /* Selected Color Card */
 .selected-color-card {
-  background-color: var(--surface);
+  background-color: var(--form-control-background);
   border: var(--form-control-border-width) solid var(--border-light);
   border-radius: var(--radius-24);
   overflow: hidden;
@@ -304,7 +313,6 @@ body {
 }
 
 select {
-  --select-background-color: transparent;
   --select-border-radius: var(--radius-full);
   --select-text-color: var(--on-surface);
   --select-optgroup-color: var(--on-surface);
@@ -439,10 +447,10 @@ select {
 }
 
 [id="quiz-btn"] {
-  --button-border-color: transparent;
-  --button-background-color: var(--color-gray-200);
-  --button-background-color-hover: var(--accent);
-  --button-text-color: var(--surface);
+  /* --button-border-color: transparent; */
+  /* --button-background-color: var(--color-gray-200); */
+  --button-background-color-hover: var(--primary);
+  /* --button-text-color: var(--surface); */
 
   padding: var(--spacing-8) var(--spacing-12);
   /* border-radius: 0% 20% 20% 20% / 20% 40% 40% 40%; */
@@ -461,7 +469,7 @@ select {
 .btn-cta {
   --button-border-color: transparent;
   --button-background-color: #5c6bc0;
-  --button-text-color: var(--on-surface);
+  --button-text-color: var(--color-white);
 }
 
 .empty-state {

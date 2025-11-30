@@ -463,6 +463,7 @@ input:not(
   ) {
   --input-background-color: var(--form-control-background, Field);
   --input-border-color: var(--form-control-border-color, ButtonBorder);
+  --input-border-color-hover: var(--form-control-border-color, ButtonBorder);
   --input-border-radius: var(--form-control-border-radius, 0);
   --input-border-width: var(--form-control-border-width, 1px);
   --input-text-color: var(--on-form-control, ButtonText);
@@ -480,6 +481,12 @@ input:not(
   color: var(--input-text-color);
   font: inherit;
   line-height: 1.5;
+
+  /* État survol */
+  &:hover {
+    box-shadow: inset 0 0 0 var(--input-border-width)
+      var(--input-border-color-hover);
+  }
 
   /* État désactivé */
   &:disabled {
@@ -815,6 +822,7 @@ input:not(
 select {
   --select-background-color: var(--form-control-background, Field);
   --select-border-color: var(--form-control-border-color, ButtonBorder);
+  --select-border-color-hover: var(--form-control-border-color, ButtonBorder);
   --select-border-radius: var(--form-control-border-radius, 0);
   --select-border-width: var(--form-control-border-width, 1px);
   --select-text-color: var(--on-form-control, FieldText);
@@ -841,6 +849,8 @@ select {
   appearance: none;
   -webkit-user-select: none;
   user-select: none;
+
+  /* État survol */
 
   /* État désactivé */
   &:disabled {
