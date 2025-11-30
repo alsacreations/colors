@@ -93,6 +93,18 @@ body {
   font-size: var(--text-s);
 }
 
+/* Liens */
+.title-link {
+  color: currentColor;
+  text-decoration: none;
+  transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+  }
+}
+
 .filter-description {
   color: var(--on-surface);
   margin-top: calc(var(--spacing-xs) * -1);
