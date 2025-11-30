@@ -49,8 +49,8 @@
   --spacing-80: 5rem;
 
   /* Familles de police */
-  --font-base: system-ui, sans-serif;
-  --font-base: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --font-base: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
   --font-mono: ui-monospace, monospace;
   --font-chicle: chicle, serif;
 
