@@ -422,6 +422,8 @@ select {
   --button-border-color: transparent;
   --button-background-color: var(--color-gray-200);
   --button-text-color: var(--surface);
+
+  padding: var(--spacing-8) var(--spacing-12);
   border-radius: 0% 20% 20% 20% / 20% 40% 40% 40%;
   position: absolute;
   right: 0;
