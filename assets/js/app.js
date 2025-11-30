@@ -7,6 +7,7 @@ import {
 } from "./modules/utils.js";
 import { filterFunctions } from "./modules/filters.js";
 import { ColorQuiz } from "./modules/quiz.js";
+import { palettes } from "./modules/palettes.js";
 
 // DOM Elements
 const searchInput = document.getElementById("color-search");
@@ -16,6 +17,7 @@ const selectedColorDisplay = document.getElementById("selected-color-display");
 const nearbyColorsContainer = document.getElementById("nearby-colors");
 const favoritesSection = document.getElementById("favorites-section");
 const favoritesList = document.getElementById("favorites-list");
+const palettesList = document.getElementById("palettes-list");
 
 const hueSlider = document.getElementById("hue-slider");
 const specialFilterSelect = document.getElementById("special-filter");
@@ -41,6 +43,7 @@ function init() {
 
   setupEventListeners();
   renderFavorites();
+  renderPalettes();
 
   // Check URL params for initial search
   const params = new URLSearchParams(window.location.search);
@@ -603,6 +606,77 @@ function renderFavorites() {
       favoritesList.appendChild(createColorCard(color));
     }
   });
+}
+
+function renderPalettes() {
+  palettesList.innerHTML = "";
+  palettes.forEach((palette) => {
+    const card = createPaletteCard(palette);
+    palettesList.appendChild(card);
+  });
+}
+
+function createPaletteCard(palette) {
+  const div = document.createElement("div");
+  div.className = "palette-card";
+  div.setAttribute("tabindex", "0");
+  div.setAttribute("role", "button");
+  div.setAttribute("aria-label", `Charger la palette ${palette.name}`);
+
+  const stripes = palette.colors
+    .map((colorName) => {
+      const color = colorsWithHsl.find((c) => c.name === colorName);
+      const hex = color ? color.hex : colorName;
+      return `<div class="palette-stripe" style="background-color: ${hex}" title="${colorName}"></div>`;
+    })
+    .join("");
+
+  div.innerHTML = `
+        <div class="palette-preview">
+            ${stripes}
+        </div>
+        <div class="palette-info">
+            <span class="text-s font-bold">${palette.name}</span>
+            <span class="text-s text-subtle" style="font-size: 0.8em">${palette.colors.length} couleurs</span>
+        </div>
+    `;
+
+  div.addEventListener("click", () => loadPalette(palette));
+  div.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      loadPalette(palette);
+    }
+  });
+
+  return div;
+}
+
+function loadPalette(palette) {
+  // Clear selected color display
+  selectedColorDisplay.innerHTML = "";
+  selectedColorDisplay.style.display = "none";
+
+  // Update title
+  const container = nearbyColorsContainer.parentElement;
+  const title = container.querySelector("h2");
+  title.textContent = `Palette : ${palette.name}`;
+
+  // Description
+  filterDescription.textContent = `Couleurs : ${palette.colors.join(", ")}`;
+  filterDescription.style.display = "block";
+
+  nearbyColorsContainer.innerHTML = "";
+
+  palette.colors.forEach((colorName) => {
+    const color = colorsWithHsl.find((c) => c.name === colorName);
+    if (color) {
+      nearbyColorsContainer.appendChild(createColorCard(color));
+    }
+  });
+
+  resultsSection.hidden = false;
+  resultsSection.scrollIntoView({ behavior: "smooth" });
 }
 
 // Run

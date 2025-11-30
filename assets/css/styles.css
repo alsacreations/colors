@@ -80,7 +80,7 @@ body {
 .title-m {
   font-size: var(--text-xl);
   font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--spacing-s);
+  /* margin-bottom: var(--spacing-s); */
 }
 
 .title-s {
@@ -434,4 +434,48 @@ select {
   --button-border-color: transparent;
   --button-background-color: #5c6bc0;
   --button-text-color: var(--on-surface);
+}
+
+/* Palette Cards */
+.grid-palettes {
+  padding-top: var(--spacing-s);
+}
+.palette-card {
+  display: flex;
+  flex-direction: column;
+  border: var(--form-control-border-width) solid var(--border-light);
+  border-radius: var(--radius-24);
+  overflow: hidden;
+  transition: translate var(--transition-duration);
+  cursor: pointer;
+  background-color: var(--surface);
+}
+
+.palette-card:hover,
+.palette-card:focus-visible {
+  translate: 0 -2px;
+  border-color: var(--primary);
+}
+
+.palette-preview {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+}
+
+.palette-stripe {
+  flex: 1;
+  height: 100%;
+}
+
+.palette-info {
+  padding: var(--spacing-s);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Adjust grid for palettes if needed */
+.grid-palettes {
+  --col-min-size: 16rem; /* Wider cards for palettes */
 }
