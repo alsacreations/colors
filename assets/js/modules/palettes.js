@@ -31,7 +31,7 @@ export const palettes = [
   },
   {
     name: "Pastel Party",
-    colors: ["pink", "lavender", "lemonchiffon", "palegreen", "lightblue"],
+    colors: ["pink", "lavender", "lemonchiffon", "mintcream", "lightblue"],
   },
   {
     name: "Sun & Sea",
