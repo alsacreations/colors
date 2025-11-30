@@ -250,6 +250,7 @@ body {
   flex-direction: column;
   border: var(--form-control-border-width) solid var(--border-light);
   border-radius: var(--radius-24);
+  background-color: var(--form-control-background);
   overflow: hidden;
   transition: translate var(--transition-duration);
   cursor: pointer;
