@@ -94,6 +94,7 @@ function setupEventListeners() {
         (c) => c.name.toLowerCase() === hash.toLowerCase()
       );
       if (color) {
+        document.title = `Hotpink.com - couleur ${color.name}`;
         renderSelectedColor(color);
         renderNearbyColors(color);
         resultsSection.hidden = false;
