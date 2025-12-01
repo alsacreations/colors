@@ -133,6 +133,10 @@ export const specificFunFacts = {
     "<strong>Aliceblue</strong> est une couleur nommée qui fait partie du groupe des \"blancs cassés\". On raconte qu'elle a été nommée d'après Alice Roosevelt Longworth, la fille du président américain Theodore Roosevelt, et qu'elle était sa couleur de robe favorite.",
   papayawhip:
     "<strong>Papayawhip</strong> est une couleur nommée qui évoque la teinte d'un dessert léger et mousseux fait avec de la papaye et de la crème fouettée.",
+  mediumblue:
+    "<strong>Mediumblue</strong> est une couleur nommée qui se rapproche de la teinte du Bleu de Prusse, un pigment synthétique découvert par accident au début du XVIIIe siècle. Ce pigment a été le premier pigment bleu moderne et fut important dans l'art et les uniformes militaires de l'époque.",
+  goldenrod:
+    "<strong>Goldenrod</strong> est une couleur nommée d'après la plante du même nom (Solidago). Historiquement, cette plante était parfois utilisée pour produire un colorant jaune naturel. La couleur web est un jaune doré soutenu (#DAA520), souvent utilisé pour son association à la richesse et à l'automne.",
 };
 
 // Historical colors from HTML 4.01 (1999)
