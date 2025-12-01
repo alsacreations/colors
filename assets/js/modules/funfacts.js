@@ -36,15 +36,15 @@ export const specificFunFacts = {
   dodgerblue:
     "<strong>Dodgerblue</strong> est célèbre pour avoir été utilisée comme la couleur du logo de l'équipe de baseball des Los Angeles Dodgers (anciennement les Brooklyn Dodgers).",
   fuchsia:
-    "<strong>Fuchsia</strong> est la couleur la plus souvent mal orthographiée.",
+    "<strong>Fuchsia</strong> et <code>magenta</code> sont absolument identiques (<code>#ff00ff</code>). La première était très utilisée dans les palettes VGA de Microsoft et de Windows, et la seconde dans l'industrie en général (modèle CMJN). Les deux couleurs ont été conservées pour garantir l'accès à cette couleur.",
   lightgoldenrodyellow:
     "<strong>Lightgoldenrodyellow</strong> est le nom de couleur le plus long de tous (20 caractères).",
   rebeccapurple:
     "<strong>Rebeccapurple</strong> a été ajoutée à la spécification CSS Color Level 4 pour rendre hommage à la fille décédée d'Eric Meyer, un éminent contributeur au développement du CSS. C'est le seul nom de couleur à avoir été introduit dans le but d'être un mémorial permanent dans la spécification technique.",
-  cyan: "<strong>Cyan</strong> et <code>aqua</code> sont absolument identiques (<code>#00ffff</code>).",
-  aqua: "<strong>Aqua</strong> et <code>cyan</code> sont absolument identiques (<code>#00ffff</code>).",
+  cyan: "<strong>Cyan</strong> et <code>aqua</code> sont absolument identiques (<code>#00ffff</code>). La première correspond au modèle CMJN de l'industrie de l'imprimerie, tandis que la seconde était le nom préféré dans la palette de couleurs des systèmes VGA et des premières versions de Microsoft Windows.",
+  aqua: "<strong>Aqua</strong> et <code>cyan</code> sont absolument identiques (<code>#00ffff</code>). La première était le nom préféré dans la palette de couleurs des systèmes VGA et des premières versions de Microsoft Windows, tandis que la seconde était nécessaire pour maintenir la cohérence avec le modèle CMJN de l'industrie de l'imprimerie.",
   magenta:
-    "<strong>Magenta</strong> et <code>fuchsia</code> sont absolument identiques (<code>#ff00ff</code>).",
+    "<strong>Magenta</strong> et <code>fuchsia</code> sont absolument identiques (<code>#ff00ff</code>). La première était très utilisée dans l'industrie en général (modèle CMJN), et la seconde dans les palettes VGA de Microsoft et de Windows. Les deux couleurs ont été conservées pour garantir l'accès à cette couleur.",
   brown: "<strong>Brown</strong> est plus rouge que brun.",
   black:
     "<strong>Black</strong> et <code>white</code> sont les couleurs fondamentales des systèmes informatiques. Leur utilisation est intrinsèquement liée à la programmation binaire : <code>black</code> représente l'absence de signal lumineux, et <code>white</code> représente l'intensité maximale pour les trois canaux RVB.",
