@@ -10,6 +10,30 @@ export const specificFunFacts = {
     "<strong>Darkgrey</strong> est plus claire que <code>grey</code>\u202f!",
   gray: "<strong>Gray</strong> est plus sombre que <code>darkgray</code>\u202f!",
   grey: "<strong>Grey</strong> est plus sombre que <code>darkgrey</code>\u202f!",
+  khaki:
+    '<strong>Khaki</strong> vient du mot ourdou et persan pour "poussiéreux" ou "couleur de la terre".',
+  indigo:
+    "<strong>Indigo</strong> est un nom de couleur dérivé d'une plante du genre Indigofera, dont on tirait historiquement un colorant bleu foncé très précieux.",
+  chocolate:
+    "<strong>Chocolate</strong> est un exemple de la façon dont les noms de couleurs populaires ont été ajoutés à la spécification. Elle était courante dans les palettes X11, reflétant la popularité de cette teinte de brun-rouge. C'est l'une des couleurs qui tente de représenter une texture ou une matière plutôt qu'une teinte chromatique pure.",
+  tan: '<strong>Tan</strong> signifie "bronzé" en anglais. Son utilisation comme nom de couleur remonte à la fin du XIXe siècle pour décrire la couleur de la peau après l\'exposition au soleil ou la couleur du cuir tanné.',
+  aqua: '<strong>Aqua</strong> est souvent lié à l\'aigue-marine (une variété de béryl) et vient du latin aqua marina signifiant "eau de mer".',
+  mauve:
+    "<strong>Mauve</strong> Le nom vient du mot français « mauve », qui désigne la fleur du même nom (Malvaceae).",
+  peru: "<strong>Peru</strong> a été incluse dans la liste des couleurs X11, et il est très probable qu'elle ait été nommée d'après la couleur du minerai brut ou de la terre de la région andine. C'est l'un des rares noms de couleur à être directement associé à un toponyme (un nom de lieu).",
+  turquoise:
+    "<strong>Turquoise</strong> vient de la pierre semi-précieuse du même nom. Le mot lui-même est dérivé de l'ancien français turkeis, signifiant \"turc\", car la pierre est arrivée en Europe depuis la Turquie (provenant souvent d'Iran ou de la péninsule du Sinaï).",
+  gold: "<strong>Gold</strong> est Évidemment, l'or. La couleur web nommée gold (#FFD700) est particulièrement jaune, capturant l'éclat du métal précieux par opposition à d'autres jaunes.",
+  burlywood:
+    "<strong>Burlywood</strong> est souvent associé à la couleur d'un bois solide, noueux ou rustique (burly signifiant costaud ou robuste). Il s'agit d'une couleur beige-brun moyen.",
+  firebrick:
+    '<strong>Firebrick</strong> est littéralement "brique réfractaire". Ce nom fait référence à la couleur de la brique utilisée pour construire les fours et cheminées qui doivent résister à des températures très élevées. C\'est une nuance de rouge foncé, riche et légèrement brunâtre, censée évoquer la chaleur.',
+  beige:
+    "<strong>Beige</strong> est un mot français qui fait référence à la laine naturelle qui n'a pas été teinte. C'est l'un des rares noms de couleur dans la liste étendue à venir directement du français.",
+  cornflowerblue:
+    "<strong>Cornflowerblue</strong> vient de la fleur de bleuet (en anglais, cornflower). Il est historiquement célèbre pour avoir été la couleur de fond par défaut de l'interface utilisateur de l'outil de développement Visual Studio de Microsoft dans les années 1990 et 2000.",
+  dodgerblue:
+    "<strong>Dodgerblue</strong> est célèbre pour avoir été utilisée comme la couleur du logo de l'équipe de baseball des Los Angeles Dodgers (anciennement les Brooklyn Dodgers).",
   fuchsia:
     "<strong>Fuchsia</strong> est la couleur la plus souvent mal orthographiée.",
   lightgoldenrodyellow:
@@ -40,6 +64,48 @@ export const specificFunFacts = {
     "<strong>Hotpink</strong> est en toute objectivité le nom de couleur le plus original ou mémorable.",
   navajowhite:
     "<strong>Navajowhite</strong> a été nommée d'après la couleur de fond du drapeau de la Nation Navajo.",
+  olive:
+    "<strong>Olive</strong> a été nommée d'après la couleur du fruit de l'olivier (avant maturation complète ou après préparation), un brun-vert terne.",
+  plum: "<strong>Plum</strong> a été nommée d'après la couleur du fruit du prunier (la prune). Elle fait référence à la teinte violet-rose foncé et riche de la peau de certaines variétés de prunes mûres.",
+  sienna:
+    "<strong>Sienna</strong> est une couleur nommée qui fait référence à la couleur de la terre de Sienne, un pigment d'argile naturelle riche en oxyde de fer, originaire de la région de Sienne en Toscane, en Italie. Son nom est donc un toponyme lié à un pigment naturel.",
+  tomato:
+    "<strong>Tomato</strong> a été nommée d'après la couleur de la tomate rouge mûre. C'est une couleur rouge-orangé très vif qui est souvent utilisée pour attirer l'attention.",
+  chartreuse:
+    "<strong>Chartreuse</strong> a été nommée d'après la couleur de la célèbre liqueur française Chartreuse. Sa couleur vert-jaune brillante est celle de la plante utilisée pour aromatiser cette boisson.",
+  salmon:
+    "<strong>Salmon</strong> a été nommée d'après la couleur de la chair du poisson du même nom, qui est un rose-orangé pâle et délicat.",
+  coral:
+    "<strong>Coral</strong> est le nom d'une couleur qui provient des structures calcaires formées par des polypes marins. La couleur web nommée coral est un rouge-orangé vif, une teinte populaire trouvée dans les récifs coralliens.",
+  honeydew:
+    "<strong>Honeydew</strong> signifie miellat en anglais et a été nommée d'après le fruit du melon du même nom (le melon d'hiver). C'est une couleur vert-jaune très pâle qui évoque la chair pâle et légèrement verdâtre du fruit.",
+  seashell:
+    "<strong>Seashell</strong> a été nommée d'après la couleur des coquillages trouvés sur la plage. C'est une teinte blanc cassé très pâle, avec une légère touche de rose ou de jaune, suggérant la couleur naturelle des coquilles.",
+  linen:
+    "<strong>Linen</strong> (lin) a été nommée d'après la couleur naturelle des fibres de lin tissé (utilisées pour faire des vêtements et du linge de maison). C'est une nuance de blanc cassé qui est légèrement plus foncée ou plus chaude que le blanc pur.",
+  oldlace:
+    "<strong>Oldlace</strong> (vieille dentelle) est une couleur nommée qui évoque la teinte du tissu de dentelle qui a jauni avec le temps. C'est un blanc-crème très pâle et chaud, souvent utilisé dans les graphismes pour suggérer un aspect vintage.",
+  moccasin:
+    "<strong>Moccasin</strong> (mocassin) a été nommée d'après la couleur du cuir non teint ou du daim souvent utilisé pour fabriquer des mocassins (chaussures douces traditionnellement portées par les peuples autochtones d'Amérique du Nord).",
+  wheat:
+    "<strong>Wheat</strong> (blé) a été nommée d'après la couleur des épis de blé mûrs ou de la paille séchée. Elle est souvent associée à la couleur des cheveux blonds ou du grain moissonné, représentant un jaune-brun pâle et chaud.",
+  midnightblue:
+    "<strong>Midnightblue</strong> (bleu de minuit) est une couleur nommée qui évoque la teinte du ciel par une nuit claire sans lune. C'est un bleu très foncé, souvent utilisé pour symboliser la profondeur ou l'obscurité, mais qui reste distinct du noir pur.",
+  lavender:
+    "<strong>Lavender</strong> (lavande) a été nommée d'après la couleur des fleurs de lavande. Cependant, la couleur web lavender est une nuance de lilas beaucoup plus pâle et plus claire que la couleur de la plupart des fleurs de lavande réelles.",
+  skyblue:
+    "<strong>Skyblue</strong> (bleu ciel) est une couleur nommée qui évoque la teinte d'un ciel dégagé de jour. C'est un bleu vif et moyen qui est une couleur courante dans les paysages naturels.",
+  mistyrose:
+    "<strong>Mistyrose</strong> (rose brumeux) est une couleur nommée qui évoque l'aspect d'une rose pâle vue à travers une brume légère ou d'un brouillard matinal. Elle est un rose très doux, légèrement grisâtre, qui suggère la délicatesse et le flou.",
+  pink: "<strong>Pink</strong> (rose) est un nom relativement jeune dans l'histoire des couleurs. Le mot désignant cette couleur n'est apparu en anglais qu'au XVIIe siècle. Avant cela, elle était souvent considérée comme une simple variation de rouge pâle ou de rouge clair. Le rose tire son nom de la fleur éponyme (le Dianthus), en anglais, pink.",
+  indigo:
+    "<strong>Indigo</strong> fait partie des sept couleurs de l'arc-en-ciel identifiées par Sir Isaac Newton, qui a introduit cette teinte entre le bleu et le violet pour faire correspondre l'arc-en-ciel au nombre mystique de sept notes dans la gamme musicale. Cette inclusion a parfois été remise en question.",
+  cadetblue:
+    "<strong>Cadetblue</strong> est un nom de couleur qui remonte au milieu du XIXe siècle et qui est associé aux uniformes militaires des cadets. C'est un bleu-gris, une couleur qui symbolise souvent la jeunesse et le service militaire.",
+  darkgreen:
+    "<strong>Darkgreen</strong> dans la palette X11 était historiquement crucial car, dans les premiers graphismes informatiques, il était souvent utilisé comme couleur de fond pour simuler le texte sur un écran cathodique (CRT) vert monochrome, avant l'arrivée des écrans couleur.",
+  azure:
+    "<strong>Azure</strong>. Microsoft a choisi ce nom pour son service cloud précisément parce que l'azur représente le ciel (le cloud). Ils ont capitalisé sur l'imagerie établie de la couleur : pureté, clarté, et une infinité d'espace au-dessus de la terre, ce qui correspond parfaitement au concept d'informatique en nuage.",
 };
 
 // Historical colors from HTML 4.01 (1999)
