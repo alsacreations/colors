@@ -137,5 +137,13 @@ export function hexToOklch(hex) {
 
   if (h < 0) h += 360;
 
-  return `oklch(${L.toFixed(3)} ${C.toFixed(3)} ${h.toFixed(1)})`;
+  // Format numbers to remove unnecessary trailing zeros
+  const formatValue = (value, decimals) => {
+    return parseFloat(value.toFixed(decimals)).toString();
+  };
+
+  return `oklch(${formatValue(L, 3)} ${formatValue(C, 3)} ${formatValue(
+    h,
+    1
+  )})`;
 }
