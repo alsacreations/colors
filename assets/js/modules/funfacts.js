@@ -46,7 +46,7 @@ export const specificFunFacts = {
   antiquewhite:
     '<strong>Antiquewhite</strong> est une couleur nommée qui évoque la teinte des vieux tissus de lin ou de coton qui ont jauni naturellement avec le temps, le rendant plus chaleureux et doux. C\'est un blanc casséqui est largement utilisé en design pour donner un aspect "vintage" ou classique.',
   rebeccapurple:
-    "<strong>Rebeccapurple</strong> a été ajoutée à la spécification CSS Color Level 4 pour rendre hommage à la fille décédée d'Eric Meyer, un éminent contributeur au développement du CSS. C'est le seul nom de couleur à avoir été introduit dans le but d'être un mémorial permanent dans la spécification technique.",
+    "<strong>Rebeccapurple</strong> a été ajoutée à la spécification CSS Color Level 4 pour rendre hommage à la fille décédée d'Eric Meyer, un éminent contributeur au développement du CSS. C'est le seul nom de couleur à avoir été introduit dans le but d'être un mémorial permanent dans la spécification technique. Elle est la 148e couleur nommée.",
   cyan: "<strong>Cyan</strong> et <code>aqua</code> sont absolument identiques (<code>#00ffff</code>). La première correspond au modèle CMJN de l'industrie de l'imprimerie, tandis que la seconde était le nom préféré dans la palette de couleurs des systèmes VGA et des premières versions de Microsoft Windows.",
   aqua: "<strong>Aqua</strong> et <code>cyan</code> sont absolument identiques (<code>#00ffff</code>). La première était le nom préféré dans la palette de couleurs des systèmes VGA et des premières versions de Microsoft Windows, tandis que la seconde était nécessaire pour maintenir la cohérence avec le modèle CMJN de l'industrie de l'imprimerie.",
   magenta:

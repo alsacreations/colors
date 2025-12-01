@@ -232,7 +232,7 @@ function renderSpecialResults(colors, filterType) {
 
   const descriptions = {
     "all-lightness":
-      "L'ensemble des 140+ couleurs CSS nommées (hors couleurs système), triées de la plus claire à la plus sombre. Idéal pour trouver la nuance exacte de luminosité que vous recherchez.",
+      "L'ensemble des 148 couleurs CSS nommées (147 de CSS3 + rebeccapurple ajoutée en CSS4), hors couleurs système, triées de la plus claire à la plus sombre. Idéal pour trouver la nuance exacte de luminosité que vous recherchez.",
     historical:
       "Les 16 couleurs originelles du HTML, héritées du système VGA. Ces couleurs ont été définies dès les débuts du web et sont supportées par tous les navigateurs depuis toujours.",
     pastel:

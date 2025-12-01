@@ -4,7 +4,7 @@
 
 ## 🌟 Qu'est-ce que c'est ?
 
-Les navigateurs web reconnaissent 147 couleurs par leur nom (comme "hotpink", "peachpuff", "skyblue"...). Color Finder vous permet de les découvrir, de les rechercher et de trouver des couleurs similaires en quelques clics.
+Les navigateurs web reconnaissent 148 couleurs par leur nom (comme "hotpink", "peachpuff", "skyblue"...). Color Finder vous permet de les découvrir, de les rechercher et de trouver des couleurs similaires en quelques clics.
 
 ## ✨ Fonctionnalités
 
