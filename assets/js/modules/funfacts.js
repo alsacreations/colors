@@ -24,7 +24,7 @@ export const specificFunFacts = {
   peru: "<strong>Peru</strong> a été incluse dans la liste des couleurs X11, et il est très probable qu'elle ait été nommée d'après la couleur du minerai brut ou de la terre de la région andine. C'est l'un des rares noms de couleur à être directement associé à un toponyme (un nom de lieu).",
   turquoise:
     "<strong>Turquoise</strong> vient de la pierre semi-précieuse du même nom. Le mot lui-même est dérivé de l'ancien français turkeis, signifiant \"turc\", car la pierre est arrivée en Europe depuis la Turquie (provenant souvent d'Iran ou de la péninsule du Sinaï).",
-  gold: "<strong>Gold</strong> est Évidemment, l'or. La couleur web nommée gold (#FFD700) est particulièrement jaune, capturant l'éclat du métal précieux par opposition à d'autres jaunes.",
+  gold: "<strong>Gold</strong> est Évidemment, l'or. La couleur web nommée <code>gold</code> est particulièrement jaune, capturant l'éclat du métal précieux par opposition à d'autres jaunes.",
   burlywood:
     "<strong>Burlywood</strong> est souvent associé à la couleur d'un bois solide, noueux ou rustique (burly signifiant costaud ou robuste). Il s'agit d'une couleur beige-brun moyen.",
   firebrick:
@@ -40,16 +40,16 @@ export const specificFunFacts = {
   lightgoldenrodyellow:
     "<strong>Lightgoldenrodyellow</strong> est le nom de couleur le plus long de tous (20 caractères).",
   rebeccapurple:
-    "<strong>Rebeccapurple</strong> a été nommé en hommage à la fille d'Eric Meyer, grand contributeur de CSS.",
+    "<strong>Rebeccapurple</strong> a été ajoutée à la spécification CSS Color Level 4 pour rendre hommage à la fille décédée d'Eric Meyer, un éminent contributeur au développement du CSS. C'est le seul nom de couleur à avoir été introduit dans le but d'être un mémorial permanent dans la spécification technique.",
   cyan: "<strong>Cyan</strong> et <code>aqua</code> sont absolument identiques (<code>#00ffff</code>).",
   aqua: "<strong>Aqua</strong> et <code>cyan</code> sont absolument identiques (<code>#00ffff</code>).",
   magenta:
     "<strong>Magenta</strong> et <code>fuchsia</code> sont absolument identiques (<code>#ff00ff</code>).",
   brown: "<strong>Brown</strong> est plus rouge que brun.",
   black:
-    "<strong>Black</strong> et <code>white</code> sont les deux couleurs les plus simples et les plus utilisées, avec les codes hexadécimaux extrêmes\u202f: <code>#000000</code> et <code>#FFFFFF</code>.",
+    "<strong>Black</strong> et <code>white</code> sont les couleurs fondamentales des systèmes informatiques. Leur utilisation est intrinsèquement liée à la programmation binaire : <code>black</code> représente l'absence de signal lumineux, et <code>white</code> représente l'intensité maximale pour les trois canaux RVB.",
   white:
-    "<strong>White</strong> et <code>black</code> sont les deux couleurs les plus simples et les plus utilisées, avec les codes hexadécimaux extrêmes\u202f: <code>#FFFFFF</code> et <code>#000000</code>.",
+    "<strong>White</strong> et <code>black</code> sont les couleurs fondamentales des systèmes informatiques. Leur utilisation est intrinsèquement liée à la programmation binaire : <code>white</code> représente l'absence de signal lumineux, et <code>black</code> représente l'intensité maximale pour les trois canaux RVB.",
   lime: "<strong>Lime</strong> correspond au vert pur dans le modèle de couleur RVB (<code>#00FF00</code>), tandis que la couleur nommée <code>green</code> est en fait un vert plus sombre (<code>#008000</code>).",
   green:
     "<strong>Green</strong> est en fait un vert sombre (<code>#008000</code>), tandis que <code>lime</code> correspond au vert pur (<code>#00FF00</code>).",
@@ -125,7 +125,7 @@ export const specificFunFacts = {
   orchid:
     "<strong>Orchid</strong> est une couleur nommée qui tire son nom de la couleur de la fleur d'orchidée. Le nom est utilisé pour décrire une large gamme de couleurs entre le rose et le violet, la nuance web étant un rose-violet moyen et riche.",
   maroon:
-    "<strong>Maroon</strong> est une couleur nommée qui provient du mot français marron, qui signifie « châtaigne ».",
+    "<strong>Maroon</strong> est une couleur nommée qui provient du mot français <em>marron</em>, qui signifie « châtaigne ».",
   teal: "<strong>Teal</strong> est une couleur nommée qui tire son nom de la raie colorée distinctive trouvée autour de l'œil de l'oiseau du même nom, la sarcelle d'hiver. Elle est célèbre pour avoir été la couleur de fond par défaut de l'interface utilisateur de l'outil de développement Microsoft Visual Studio dans les versions 6.0 à 2005 et devenue l'emblème de toute une génération de développeurs de logiciels Microsoft.",
   powderblue:
     "<strong>Powderblue</strong> est une couleur nommée qui fait référence à la poudre de couleur bleue utilisée au XVIIIe siècle pour teindre les perruques ou les vêtements. C'est un bleu-ciel très pâle et légèrement grisâtre.",
@@ -136,7 +136,7 @@ export const specificFunFacts = {
   mediumblue:
     "<strong>Mediumblue</strong> est une couleur nommée qui se rapproche de la teinte du Bleu de Prusse, un pigment synthétique découvert par accident au début du XVIIIe siècle. Ce pigment a été le premier pigment bleu moderne et fut important dans l'art et les uniformes militaires de l'époque.",
   goldenrod:
-    "<strong>Goldenrod</strong> est une couleur nommée d'après la plante du même nom (Solidago). Historiquement, cette plante était parfois utilisée pour produire un colorant jaune naturel. La couleur web est un jaune doré soutenu (#DAA520), souvent utilisé pour son association à la richesse et à l'automne.",
+    "<strong>Goldenrod</strong> est une couleur nommée d'après la plante du même nom (Solidago). Historiquement, cette plante était parfois utilisée pour produire un colorant jaune naturel. La couleur web est un jaune doré soutenu (<code>#DAA520</code>), souvent utilisé pour son association à la richesse et à l'automne.",
   royalblue:
     "<strong>Royalblue</strong> est une couleur nommée qui dérive historiquement du bleu soutenu associé à la famille royale britannique. Elle est également très similaire à la couleur utilisée pour le logo de plusieurs grandes institutions, y compris certaines qui ont adopté des versions de ce bleu profond et noble.",
   silver:
