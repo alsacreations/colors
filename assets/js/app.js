@@ -9,6 +9,7 @@ import { filterFunctions } from "./modules/filters.js";
 import { ColorQuiz } from "./modules/quiz.js";
 import { palettes } from "./modules/palettes.js";
 import { getColorFunFact } from "./modules/funfacts.js";
+import { getDominantColor } from "./modules/image-color.js";
 
 // DOM Elements
 const searchInput = document.getElementById("color-search");
@@ -23,6 +24,9 @@ const palettesList = document.getElementById("palettes-list");
 const hueSlider = document.getElementById("hue-slider");
 const specialFilterSelect = document.getElementById("special-filter");
 const filterDescription = document.getElementById("filter-description");
+
+const imageUpload = document.getElementById("image-upload");
+const imageCanvas = document.getElementById("image-canvas");
 
 // State
 let colorsWithHsl = [];
@@ -78,6 +82,8 @@ function setupEventListeners() {
 
   hueSlider.addEventListener("input", handleHueSlider);
   specialFilterSelect.addEventListener("change", handleSpecialFilter);
+
+  imageUpload.addEventListener("change", handleImageUpload);
 
   // Close suggestions on click outside
   document.addEventListener("click", (e) => {
@@ -730,6 +736,116 @@ function loadPalette(palette) {
     if (color) {
       nearbyColorsContainer.appendChild(createColorCard(color));
     }
+  });
+
+  resultsSection.hidden = false;
+  resultsSection.scrollIntoView({ behavior: "smooth" });
+}
+
+// Image Upload Handler
+function handleImageUpload(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  // Reset other inputs
+  searchInput.value = "";
+  suggestionsList.hidden = true;
+  specialFilterSelect.value = "";
+
+  const reader = new FileReader();
+
+  reader.onload = function (event) {
+    const img = new Image();
+
+    img.onload = function () {
+      // Extract dominant color
+      const dominantColor = getDominantColor(img);
+
+      // Display the image on canvas
+      const ctx = imageCanvas.getContext("2d");
+      const maxWidth = 300;
+      const ratio = Math.min(maxWidth / img.width, maxWidth / img.height);
+      imageCanvas.width = img.width * ratio;
+      imageCanvas.height = img.height * ratio;
+      ctx.drawImage(img, 0, 0, imageCanvas.width, imageCanvas.height);
+      imageCanvas.hidden = false;
+
+      // Find closest named color
+      const closestColor = findClosestNamedColor(dominantColor);
+
+      // Update page title
+      document.title = `Hotpink - Couleur depuis image`;
+
+      // Display results
+      renderImageColorResults(dominantColor, closestColor);
+    };
+
+    img.src = event.target.result;
+  };
+
+  reader.readAsDataURL(file);
+}
+
+function findClosestNamedColor(rgb) {
+  const targetHsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+  const targetColor = { hsl: targetHsl };
+
+  let closest = null;
+  let minDistance = Infinity;
+
+  colorsWithHsl.forEach((color) => {
+    if (color.system) return; // Skip system colors
+
+    const distance = getColorDistance(targetColor, color);
+    if (distance < minDistance) {
+      minDistance = distance;
+      closest = color;
+    }
+  });
+
+  return closest;
+}
+
+function renderImageColorResults(dominantColor, closestColor) {
+  // Hide selected color display
+  selectedColorDisplay.innerHTML = "";
+  selectedColorDisplay.style.display = "none";
+
+  // Update title
+  const container = nearbyColorsContainer.parentElement;
+  const title = container.querySelector("h2");
+  title.textContent = `Couleur extraite de l'image`;
+
+  // Show description with dominant color info
+  filterDescription.innerHTML = `
+    <div style="display: flex; align-items: center; gap: var(--spacing-s);">
+      <div style="width: 3rem; height: 3rem; background-color: ${dominantColor.hex}; border-radius: var(--radius-8); border: 1px solid var(--border-light);"></div>
+      <div>
+        <strong>Couleur dominante extraite :</strong> ${dominantColor.hex}<br>
+        <strong>Couleur nommée la plus proche :</strong> ${closestColor.name}
+      </div>
+    </div>
+  `;
+  filterDescription.style.display = "block";
+
+  // Display the closest color and similar colors
+  nearbyColorsContainer.innerHTML = "";
+
+  // Add the closest color first
+  nearbyColorsContainer.appendChild(createColorCard(closestColor));
+
+  // Add nearby colors
+  const sorted = [...colorsWithHsl]
+    .filter((c) => !c.system && c.name !== closestColor.name)
+    .sort((a, b) => {
+      const distA = getColorDistance(closestColor, a);
+      const distB = getColorDistance(closestColor, b);
+      return distA - distB;
+    })
+    .slice(0, 11);
+
+  sorted.forEach((c) => {
+    nearbyColorsContainer.appendChild(createColorCard(c));
   });
 
   resultsSection.hidden = false;

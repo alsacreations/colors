@@ -90,6 +90,27 @@
             <option value="system">Couleurs système 🖥️</option>
           </select>
         </div>
+
+        <div class="image-upload-wrapper" data-layout="stack" data-gap="xs">
+          <label for="image-upload" class="text-s"
+            >Ou trouver depuis une image&#8239;:</label
+          >
+          <div class="image-upload-container">
+            <input
+              type="file"
+              id="image-upload"
+              accept="image/*"
+              class="visually-hidden"
+            />
+            <label
+              for="image-upload"
+              class="image-upload-label btn btn-outline"
+            >
+              📸 Choisir une image
+            </label>
+            <canvas id="image-canvas" class="image-canvas" hidden></canvas>
+          </div>
+        </div>
       </section>
 
       <!-- Results Section -->
