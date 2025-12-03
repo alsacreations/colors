@@ -1,51 +1,38 @@
-# Color Finder 🎨
+# Hotpink 🎨
 
-**Color Finder** est un outil en ligne qui vous aide à trouver et explorer les couleurs CSS nommées de manière simple et intuitive.
+Chaque couleur nommée du Web a une particularité ou une histoire à raconter.
 
-## 🌟 Qu'est-ce que c'est ?
+**Hotpink** vous permet de voyager au pays des couleurs web nommées, découvrir des teintes originales et leur histoire, et organiser et créer des palettes stylées.
 
-Les navigateurs web reconnaissent 148 couleurs par leur nom (comme "hotpink", "peachpuff", "skyblue"...). Color Finder vous permet de les découvrir, de les rechercher et de trouver des couleurs similaires en quelques clics.
+## 🌟 Les couleurs nommées ?
 
-## ✨ Fonctionnalités
+Historiquement au nombre de 16 couleurs en CSS1, la liste a été enrichie au fil des années pour atteindre aujourd'hui 148 couleurs nommées officielles (comme "hotpink", "peachpuff", "rebeccapurple"…) et reconnues par les navigateurs web. **Hotpink** vous permet de les trouver, de découvrir leurs particularités et de trouver des couleurs similaires en quelques clics.
 
-### 🔍 Recherche intelligente
+## 🔍 Recherche intelligente
 
 - **Recherche par nom** : Tapez le nom d'une couleur et l'autocomplétion vous suggère les couleurs correspondantes
 - **Recherche par teinte** : Utilisez le curseur de teinte pour filtrer les couleurs selon leur tonalité (rouge, bleu, vert, etc.)
 - **Filtres originaux** : Découvrez des sélections spéciales comme les couleurs comestibles, les noms les plus courts/longs, les plantes ou les minéraux
+- **Recherche par image** : Chargez une image et découvrez la couleur dominante qui la compose ainsi que les couleurs nommées proches
 
-### 🎨 Exploration des couleurs
+## 🎯 Exploration des couleurs
 
 - **Couleurs similaires** : Quand vous sélectionnez une couleur, découvrez automatiquement les couleurs proches par teinte, luminosité ou saturation
 - **Informations détaillées** : Pour chaque couleur, visualisez :
-  - Son nom en français et en anglais
-  - Son code hexadécimal (ex: `#FF69B4`)
-  - Sa notation OKLCH (format moderne)
+  - Son nom
+  - Son histoire, sa particularité ou son origine
+  - Son code hexadécimal (ex: `#FF69B4`) ou OKLCH (format moderne)
+  - Son taux de contraste combiné avec un texte noir ou blanc
   - Un aperçu visuel avec un contraste de texte optimal
 
-### ⭐ Favoris
+## ⭐ Favoris
 
 - Enregistrez vos couleurs préférées pour y accéder rapidement
 - Vos favoris sont sauvegardés localement dans votre navigateur
 
-## 🚀 Comment l'utiliser ?
+## 🎨 Palettes
 
-1. **Rechercher une couleur** :
-
-   - Tapez un nom dans la barre de recherche (ex: "pink", "blue")
-   - OU utilisez le curseur de teinte pour filtrer par tonalité
-   - OU choisissez un filtre original dans le menu déroulant
-
-2. **Sélectionner une couleur** :
-
-   - Cliquez sur une couleur dans les résultats
-   - Les informations détaillées s'affichent
-   - Les couleurs similaires apparaissent automatiquement
-
-3. **Gérer vos favoris** :
-   - Cliquez sur l'étoile ⭐ pour ajouter une couleur à vos favoris
-   - Accédez à vos favoris via le bouton dédié
-   - Cliquez à nouveau sur l'étoile pour retirer une couleur
+- Explorez des palettes d'inspiration pour vos maquettes graphiques
 
 ## 💡 Astuces
 
